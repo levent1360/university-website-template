@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - Modern Üniversite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link"><i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67</a>
+                        <a href="#" class="top-bar-link"><i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn"><i class="bi bi-search"></i> Ara</button>
+                            <a href="#" class="top-bar-btn"><i class="bi bi-person-fill"></i> Öğrenci</a>
+                            <a href="#" class="top-bar-btn"><i class="bi bi-mortarboard-fill"></i> Mezun</a>
+                            <a href="#" class="top-bar-btn"><i class="bi bi-briefcase-fill"></i> Personel</a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-mortarboard-fill"></i> Modern Üniversite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title-custom">Hakkımızda</h1>
+                    <p class="page-subtitle-custom">Geleceği Birlikte İnşa Ediyoruz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECTOR'S MESSAGE -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="rector-image-wrapper">
+                        <img src="images/prof-1.jpg" alt="Rektör" class="img-fluid rounded shadow">
+                        <div class="rector-badge">
+                            <i class="bi bi-award-fill"></i>
+                            <span>Rektör</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="rector-message">
+                        <h2 class="mb-3">Rektörümüzden</h2>
+                        <h4 class="text-primary-custom mb-3">Prof. Dr. Ahmet Yılmaz</h4>
+                        <p class="lead">
+                            Değerli öğrencilerimiz, akademisyenlerimiz ve tüm paydaşlarımız,
+                        </p>
+                        <p>
+                            Modern Üniversitesi olarak, bilim ve teknolojinin ışığında, topluma hizmet eden,
+                            yenilikçi düşünen ve küresel rekabette öne çıkan bireyler yetiştirme misyonuyla
+                            eğitim-öğretim faaliyetlerimizi sürdürmekteyiz.
+                        </p>
+                        <p>
+                            1995 yılında kurulan üniversitemiz, bugün 8 fakülte, 35 bölüm ve 15,000'den fazla
+                            öğrencisiyle Türkiye'nin önde gelen eğitim kurumlarından biri haline gelmiştir.
+                            Uluslararası akreditasyonlarımız, güçlü akademik kadromuz ve modern altyapımızla
+                            öğrencilerimize en iyi eğitimi sunmayı hedefliyoruz.
+                        </p>
+                        <p>
+                            Araştırma ve geliştirme faaliyetlerimiz, sanayi işbirlikleri ve uluslararası
+                            ortaklıklarımızla bilime ve teknolojiye katkı sağlamaya devam ediyoruz.
+                        </p>
+                        <p class="mb-0">
+                            <strong>Saygılarımla,</strong><br>
+                            <em>Prof. Dr. Ahmet Yılmaz</em><br>
+                            <small class="text-muted">Rektör</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="mission-vision-card">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h3>Misyonumuz</h3>
+                        <p>
+                            Bilimsel ve teknolojik gelişmeleri takip eden, toplumsal sorumluluk bilinci yüksek,
+                            girişimci, yenilikçi ve küresel rekabette öne çıkan bireyler yetiştirmek;
+                            ulusal ve uluslararası düzeyde saygın, araştırma odaklı bir üniversite olmak.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission-vision-card">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h3>Vizyonumuz</h3>
+                        <p>
+                            Eğitim, araştırma ve topluma hizmet alanlarında uluslararası standartlarda,
+                            yenilikçi ve sürdürülebilir çözümler üreten, dünya çapında tanınan ve tercih edilen
+                            bir üniversite olmak.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY TIMELINE -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Tarihçemiz</h2>
+                <p class="text-muted">Modern Üniversitesi'nin gelişim yolculuğu</p>
+            </div>
+            <div class="history-timeline">
+                <div class="history-item">
+                    <div class="history-year">1995</div>
+                    <div class="history-content">
+                        <h4>Kuruluş</h4>
+                        <p>Modern Üniversitesi, 3 fakülte ve 500 öğrenci ile eğitim hayatına başladı.</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2000</div>
+                    <div class="history-content">
+                        <h4>İlk Mezunlar</h4>
+                        <p>İlk mezunlarımızı verdik. Mezunlarımız sektörde hızla yerini aldı.</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2005</div>
+                    <div class="history-content">
+                        <h4>Kampüs Genişlemesi</h4>
+                        <p>Yeni kampüs binalarımız hizmete açıldı. Öğrenci kapasitesi 5,000'e ulaştı.</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2010</div>
+                    <div class="history-content">
+                        <h4>Uluslararası Akreditasyon</h4>
+                        <p>MÜDEK ve ABET akreditasyonlarını aldık.</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2015</div>
+                    <div class="history-content">
+                        <h4>Araştırma Merkezleri</h4>
+                        <p>Yapay Zeka ve Veri Bilimi Araştırma Merkezi kuruldu.</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2024</div>
+                    <div class="history-content">
+                        <h4>Bugün</h4>
+                        <p>8 fakülte, 35 bölüm, 15,000+ öğrenci ile Türkiye'nin önde gelen üniversitelerinden biriyiz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="py-5 bg-primary-custom text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-counter">
+                        <i class="bi bi-people-fill"></i>
+                        <h2 class="counter" data-target="15000">0</h2>
+                        <p>Öğrenci</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-counter">
+                        <i class="bi bi-person-badge"></i>
+                        <h2 class="counter" data-target="850">0</h2>
+                        <p>Akademisyen</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-counter">
+                        <i class="bi bi-building"></i>
+                        <h2 class="counter" data-target="8">0</h2>
+                        <p>Fakülte</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-counter">
+                        <i class="bi bi-globe"></i>
+                        <h2 class="counter" data-target="45">0</h2>
+                        <p>Partner Üniversite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP TEAM -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Yönetim Kadromuz</h2>
+                <p class="text-muted">Üniversitemizi yöneten deneyimli ekibimiz</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="leadership-card">
+                        <img src="images/prof-1.jpg" alt="Rektör" class="img-fluid">
+                        <div class="leadership-info">
+                            <h5>Prof. Dr. Ahmet Yılmaz</h5>
+                            <p class="position">Rektör</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-envelope"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="leadership-card">
+                        <img src="images/prof-2.jpg" alt="Rektör Yardımcısı" class="img-fluid">
+                        <div class="leadership-info">
+                            <h5>Prof. Dr. Mehmet Kaya</h5>
+                            <p class="position">Rektör Yardımcısı</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-envelope"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="leadership-card">
+                        <img src="images/prof-3.jpg" alt="Genel Sekreter" class="img-fluid">
+                        <div class="leadership-info">
+                            <h5>Dr. Can Özdemir</h5>
+                            <p class="position">Genel Sekreter</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-envelope"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="leadership-card">
+                        <img src="images/prof-4.jpg" alt="Mühendislik Dekanı" class="img-fluid">
+                        <div class="leadership-info">
+                            <h5>Prof. Dr. Elif Arslan</h5>
+                            <p class="position">Mühendislik Fakültesi Dekanı</p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-envelope"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right"></i> Hakkımızda</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const increment = target / speed;
+            let count = 0;
+
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count).toLocaleString('tr-TR');
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target.toLocaleString('tr-TR');
+                }
+            };
+            updateCount();
+        };
+
+        // Intersection Observer for counter animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    animateCounter(counter);
+                    observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akademik Takvim - Modern Üniversite">
+    <title>Akademik Takvim - Modern Üniversite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67
+                        </a>
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Modern Üniversite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link active" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item text-white active">Akademik Takvim</li>
+                        </ol>
+                    </nav>
+                    <h1 class="page-title-custom">Akademik Takvim</h1>
+                    <p class="page-subtitle-custom">2024-2025 Akademik Yılı</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK INFO -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="calendar-quick-info">
+                        <i class="bi bi-calendar-check text-primary-custom"></i>
+                        <h5>Güz Dönemi</h5>
+                        <p>18 Eylül - 22 Ocak</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="calendar-quick-info">
+                        <i class="bi bi-calendar-check text-primary-custom"></i>
+                        <h5>Bahar Dönemi</h5>
+                        <p>10 Şubat - 14 Haziran</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="calendar-quick-info">
+                        <i class="bi bi-calendar-event text-accent"></i>
+                        <h5>Ara Tatil</h5>
+                        <p>23 Ocak - 9 Şubat</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="calendar-quick-info">
+                        <i class="bi bi-download text-primary-custom"></i>
+                        <h5>PDF İndir</h5>
+                        <a href="#" class="btn btn-sm btn-primary-custom mt-2">İndir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="calendar-filters mb-4">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="bi bi-grid-fill"></i> Tümü
+                </button>
+                <button class="filter-btn" data-filter="semester">
+                    <i class="bi bi-calendar3"></i> Dönem
+                </button>
+                <button class="filter-btn" data-filter="exam">
+                    <i class="bi bi-pencil-square"></i> Sınavlar
+                </button>
+                <button class="filter-btn" data-filter="registration">
+                    <i class="bi bi-file-earmark-text"></i> Kayıt
+                </button>
+                <button class="filter-btn" data-filter="holiday">
+                    <i class="bi bi-sun"></i> Tatiller
+                </button>
+            </div>
+
+            <!-- View Toggle -->
+            <div class="view-toggle">
+                <button class="view-toggle-btn active" id="btnListView">
+                    <i class="bi bi-list-ul"></i> Liste Görünümü
+                </button>
+                <button class="view-toggle-btn" id="btnCalendarView">
+                    <i class="bi bi-calendar3"></i> Takvim Görünümü
+                </button>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline" id="listView">
+                <!-- Güz Dönemi -->
+                <div class="timeline-item" data-category="semester">
+                    <div class="timeline-marker semester"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">18 Eylül 2024</div>
+                        <h4>Güz Dönemi Başlangıcı</h4>
+                        <p>2024-2025 Akademik yılı güz dönemi dersleri başlıyor.</p>
+                        <span class="badge bg-primary">Dönem</span>
+                    </div>
+                </div>
+
+                <!-- Ders Kayıt -->
+                <div class="timeline-item" data-category="registration">
+                    <div class="timeline-marker registration"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">11-15 Eylül 2024</div>
+                        <h4>Ders Kayıt Haftası</h4>
+                        <p>Güz dönemi ders kayıt ve ekleme-bırakma işlemleri.</p>
+                        <span class="badge bg-info">Kayıt</span>
+                    </div>
+                </div>
+
+                <!-- Ulusal Bayram -->
+                <div class="timeline-item" data-category="holiday">
+                    <div class="timeline-marker holiday"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">29 Ekim 2024</div>
+                        <h4>Cumhuriyet Bayramı</h4>
+                        <p>Resmi tatil - Dersler yok</p>
+                        <span class="badge bg-warning">Tatil</span>
+                    </div>
+                </div>
+
+                <!-- Ara Sınav -->
+                <div class="timeline-item" data-category="exam">
+                    <div class="timeline-marker exam"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">11-22 Kasım 2024</div>
+                        <h4>Ara Sınav Dönemi</h4>
+                        <p>Güz dönemi ara sınav haftası</p>
+                        <span class="badge bg-danger">Sınav</span>
+                    </div>
+                </div>
+
+                <!-- Yılbaşı Tatili -->
+                <div class="timeline-item" data-category="holiday">
+                    <div class="timeline-marker holiday"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">30 Aralık 2024 - 3 Ocak 2025</div>
+                        <h4>Yılbaşı Tatili</h4>
+                        <p>Kış tatili - Dersler yok</p>
+                        <span class="badge bg-warning">Tatil</span>
+                    </div>
+                </div>
+
+                <!-- Final Sınavları -->
+                <div class="timeline-item" data-category="exam">
+                    <div class="timeline-marker exam"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">13-24 Ocak 2025</div>
+                        <h4>Güz Dönemi Final Sınavları</h4>
+                        <p>Güz dönemi final sınav haftası</p>
+                        <span class="badge bg-danger">Sınav</span>
+                    </div>
+                </div>
+
+                <!-- Dönem Sonu -->
+                <div class="timeline-item" data-category="semester">
+                    <div class="timeline-marker semester"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">22 Ocak 2025</div>
+                        <h4>Güz Dönemi Sonu</h4>
+                        <p>Güz dönemi dersleri sona eriyor.</p>
+                        <span class="badge bg-primary">Dönem</span>
+                    </div>
+                </div>
+
+                <!-- Ara Tatil -->
+                <div class="timeline-item" data-category="holiday">
+                    <div class="timeline-marker holiday"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">23 Ocak - 9 Şubat 2025</div>
+                        <h4>Dönem Arası Tatil</h4>
+                        <p>Güz ve bahar dönemi arası tatil</p>
+                        <span class="badge bg-warning">Tatil</span>
+                    </div>
+                </div>
+
+                <!-- Bahar Dönemi -->
+                <div class="timeline-item" data-category="semester">
+                    <div class="timeline-marker semester"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">10 Şubat 2025</div>
+                        <h4>Bahar Dönemi Başlangıcı</h4>
+                        <p>2024-2025 Akademik yılı bahar dönemi dersleri başlıyor.</p>
+                        <span class="badge bg-primary">Dönem</span>
+                    </div>
+                </div>
+
+                <!-- Ders Kayıt -->
+                <div class="timeline-item" data-category="registration">
+                    <div class="timeline-marker registration"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">3-7 Şubat 2025</div>
+                        <h4>Ders Kayıt Haftası</h4>
+                        <p>Bahar dönemi ders kayıt ve ekleme-bırakma işlemleri.</p>
+                        <span class="badge bg-info">Kayıt</span>
+                    </div>
+                </div>
+
+                <!-- Ara Sınav -->
+                <div class="timeline-item" data-category="exam">
+                    <div class="timeline-marker exam"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">7-18 Nisan 2025</div>
+                        <h4>Ara Sınav Dönemi</h4>
+                        <p>Bahar dönemi ara sınav haftası</p>
+                        <span class="badge bg-danger">Sınav</span>
+                    </div>
+                </div>
+
+                <!-- Ulusal Bayram -->
+                <div class="timeline-item" data-category="holiday">
+                    <div class="timeline-marker holiday"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">23 Nisan 2025</div>
+                        <h4>Ulusal Egemenlik ve Çocuk Bayramı</h4>
+                        <p>Resmi tatil - Dersler yok</p>
+                        <span class="badge bg-warning">Tatil</span>
+                    </div>
+                </div>
+
+                <!-- İşçi Bayramı -->
+                <div class="timeline-item" data-category="holiday">
+                    <div class="timeline-marker holiday"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">1 Mayıs 2025</div>
+                        <h4>Emek ve Dayanışma Günü</h4>
+                        <p>Resmi tatil - Dersler yok</p>
+                        <span class="badge bg-warning">Tatil</span>
+                    </div>
+                </div>
+
+                <!-- Gençlik Bayramı -->
+                <div class="timeline-item" data-category="holiday">
+                    <div class="timeline-marker holiday"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">19 Mayıs 2025</div>
+                        <h4>Atatürk'ü Anma, Gençlik ve Spor Bayramı</h4>
+                        <p>Resmi tatil - Dersler yok</p>
+                        <span class="badge bg-warning">Tatil</span>
+                    </div>
+                </div>
+
+                <!-- Final Sınavları -->
+                <div class="timeline-item" data-category="exam">
+                    <div class="timeline-marker exam"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2-13 Haziran 2025</div>
+                        <h4>Bahar Dönemi Final Sınavları</h4>
+                        <p>Bahar dönemi final sınav haftası</p>
+                        <span class="badge bg-danger">Sınav</span>
+                    </div>
+                </div>
+
+                <!-- Dönem Sonu -->
+                <div class="timeline-item" data-category="semester">
+                    <div class="timeline-marker semester"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">14 Haziran 2025</div>
+                        <h4>Bahar Dönemi Sonu</h4>
+                        <p>2024-2025 Akademik yılı sona eriyor.</p>
+                        <span class="badge bg-primary">Dönem</span>
+                    </div>
+                </div>
+
+                <!-- Mezuniyet -->
+                <div class="timeline-item" data-category="semester">
+                    <div class="timeline-marker semester"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">28 Haziran 2025</div>
+                        <h4>Mezuniyet Töreni</h4>
+                        <p>2025 yılı mezuniyet töreni</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar View -->
+            <div class="calendar-view" id="calendarView">
+                <h3 class="calendar-month-header">Eylül 2024</h3>
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Pzt</div>
+                    <div class="calendar-day-header">Sal</div>
+                    <div class="calendar-day-header">Çar</div>
+                    <div class="calendar-day-header">Per</div>
+                    <div class="calendar-day-header">Cum</div>
+                    <div class="calendar-day-header">Cmt</div>
+                    <div class="calendar-day-header">Paz</div>
+                    
+                    <!-- Week 1 -->
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day"><span class="calendar-date">1</span></div>
+                    
+                    <!-- Week 2 -->
+                    <div class="calendar-day"><span class="calendar-date">2</span></div>
+                    <div class="calendar-day"><span class="calendar-date">3</span></div>
+                    <div class="calendar-day"><span class="calendar-date">4</span></div>
+                    <div class="calendar-day"><span class="calendar-date">5</span></div>
+                    <div class="calendar-day"><span class="calendar-date">6</span></div>
+                    <div class="calendar-day"><span class="calendar-date">7</span></div>
+                    <div class="calendar-day"><span class="calendar-date">8</span></div>
+                    
+                    <!-- Week 3 -->
+                    <div class="calendar-day"><span class="calendar-date">9</span></div>
+                    <div class="calendar-day"><span class="calendar-date">10</span></div>
+                    <div class="calendar-day">
+                        <span class="calendar-date">11</span>
+                        <div class="calendar-event registration">Ders Kayıt Haftası</div>
+                    </div>
+                    <div class="calendar-day">
+                        <span class="calendar-date">12</span>
+                        <div class="calendar-event registration">Ders Kayıt Haftası</div>
+                    </div>
+                    <div class="calendar-day">
+                        <span class="calendar-date">13</span>
+                        <div class="calendar-event registration">Ders Kayıt Haftası</div>
+                    </div>
+                    <div class="calendar-day">
+                        <span class="calendar-date">14</span>
+                        <div class="calendar-event registration">Ders Kayıt</div>
+                    </div>
+                    <div class="calendar-day">
+                        <span class="calendar-date">15</span>
+                        <div class="calendar-event registration">Ders Kayıt</div>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div class="calendar-day"><span class="calendar-date">16</span></div>
+                    <div class="calendar-day"><span class="calendar-date">17</span></div>
+                    <div class="calendar-day today">
+                        <span class="calendar-date">18</span>
+                        <div class="calendar-event semester">Güz Dönemi Başlıyor</div>
+                    </div>
+                    <div class="calendar-day"><span class="calendar-date">19</span></div>
+                    <div class="calendar-day"><span class="calendar-date">20</span></div>
+                    <div class="calendar-day"><span class="calendar-date">21</span></div>
+                    <div class="calendar-day"><span class="calendar-date">22</span></div>
+
+                    <!-- Week 5 -->
+                    <div class="calendar-day"><span class="calendar-date">23</span></div>
+                    <div class="calendar-day"><span class="calendar-date">24</span></div>
+                    <div class="calendar-day"><span class="calendar-date">25</span></div>
+                    <div class="calendar-day"><span class="calendar-date">26</span></div>
+                    <div class="calendar-day"><span class="calendar-date">27</span></div>
+                    <div class="calendar-day"><span class="calendar-date">28</span></div>
+                    <div class="calendar-day"><span class="calendar-date">29</span></div>
+                    
+                    <!-- Week 6 -->
+                    <div class="calendar-day"><span class="calendar-date">30</span></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                    <div class="calendar-day empty"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="faculty-members.html"><i class="bi bi-chevron-right"></i> Akademik Kadro</a></li>
+                        <li><a href="news.html"><i class="bi bi-chevron-right"></i> Haberler</a></li>
+                        <li><a href="campus-life.html"><i class="bi bi-chevron-right"></i> Kampüs Yaşamı</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Akademik</h5>
+                    <ul class="footer-links">
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Lisans Programları</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Yüksek Lisans</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Doktora</a></li>
+                        <li><a href="academic-calendar.html"><i class="bi bi-chevron-right"></i> Akademik Takvim</a>
+                        </li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Kütüphane</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, 34000 İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                        <li><i class="bi bi-envelope-fill text-accent"></i> info@modernuni.edu.tr</li>
+                        <li><i class="bi bi-clock-fill text-accent"></i> Pzt-Cum: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary-custom"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px; opacity: 0; transition: opacity 0.3s;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Calendar Filter & Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    timelineItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'flex';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateX(0)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateX(-20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // View Toggle Logic
+            const btnListView = document.getElementById('btnListView');
+            const btnCalendarView = document.getElementById('btnCalendarView');
+            const listView = document.getElementById('listView');
+            const calendarView = document.getElementById('calendarView');
+            const calendarFilters = document.querySelector('.calendar-filters');
+
+            btnListView.addEventListener('click', () => {
+                btnCalendarView.classList.remove('active');
+                btnListView.classList.add('active');
+                calendarView.style.display = 'none';
+                listView.style.display = 'block';
+                calendarFilters.style.display = 'block';
+            });
+
+            btnCalendarView.addEventListener('click', () => {
+                btnListView.classList.remove('active');
+                btnCalendarView.classList.add('active');
+                listView.style.display = 'none';
+                calendarFilters.style.display = 'none';
+                calendarView.style.display = 'block';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+

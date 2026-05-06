@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilgisayar Mühendisliği Bölümü - Modern Üniversite">
+    <title>Bilgisayar Mühendisliği - Modern Üniversite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67
+                        </a>
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Modern Üniversite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item"><a href="faculties.html" class="text-white">Fakülteler</a></li>
+                            <li class="breadcrumb-item text-white active">Bilgisayar Mühendisliği</li>
+                        </ol>
+                    </nav>
+                    <h1 class="page-title-custom">Bilgisayar Mühendisliği Bölümü</h1>
+                    <p class="page-subtitle-custom">Mühendislik Fakültesi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPARTMENT STATS -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="stat-box">
+                        <i class="bi bi-people-fill text-primary-custom"></i>
+                        <h3 class="stat-number" data-target="450">0</h3>
+                        <p class="stat-label">Öğrenci</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="stat-box">
+                        <i class="bi bi-person-badge-fill text-primary-custom"></i>
+                        <h3 class="stat-number" data-target="28">0</h3>
+                        <p class="stat-label">Öğretim Üyesi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="stat-box">
+                        <i class="bi bi-book-fill text-primary-custom"></i>
+                        <h3 class="stat-number" data-target="120">0</h3>
+                        <p class="stat-label">Ders</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="stat-box">
+                        <i class="bi bi-award-fill text-primary-custom"></i>
+                        <h3 class="stat-number" data-target="15">0</h3>
+                        <p class="stat-label">Laboratuvar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <ul class="nav nav-tabs department-tabs mb-4" id="departmentTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button">
+                        <i class="bi bi-info-circle me-2"></i>Genel Bilgi
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum"
+                        type="button">
+                        <i class="bi bi-journal-text me-2"></i>Müfredat
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="faculty-tab" data-bs-toggle="tab" data-bs-target="#faculty"
+                        type="button">
+                        <i class="bi bi-people me-2"></i>Öğretim Üyeleri
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="facilities-tab" data-bs-toggle="tab" data-bs-target="#facilities"
+                        type="button">
+                        <i class="bi bi-building me-2"></i>Laboratuvarlar
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="career-tab" data-bs-toggle="tab" data-bs-target="#career"
+                        type="button">
+                        <i class="bi bi-briefcase me-2"></i>Kariyer
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="departmentTabContent">
+                <!-- Overview Tab -->
+                <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h2 class="mb-4">Bölüm Hakkında</h2>
+                            <p class="lead">
+                                Bilgisayar Mühendisliği Bölümü, teknolojinin hızla geliştiği günümüzde, yazılım ve
+                                donanım alanlarında
+                                uzman mühendisler yetiştirmektedir.
+                            </p>
+                            <p>
+                                Bölümümüz, 1995 yılında kurulmuş olup, bugüne kadar 2000'den fazla mezun vermiştir.
+                                Mezunlarımız,
+                                Türkiye'nin ve dünyanın önde gelen teknoloji şirketlerinde önemli pozisyonlarda görev
+                                almaktadır.
+                            </p>
+
+                            <h3 class="mt-4 mb-3">Eğitim Programı</h3>
+                            <p>
+                                4 yıllık lisans programımız, teorik bilgi ile pratik uygulamaları dengeli bir şekilde
+                                birleştirmektedir.
+                                Öğrencilerimiz, modern laboratuvarlarda projeler geliştirerek sektörün ihtiyaç duyduğu
+                                becerileri kazanmaktadır.
+                            </p>
+
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="feature-box">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <h5>Akreditasyon</h5>
+                                        <p>MÜDEK akreditasyonuna sahip</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-box">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <h5>Uluslararası İşbirliği</h5>
+                                        <p>20+ partner üniversite</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-box">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <h5>Staj İmkanları</h5>
+                                        <p>Önde gelen teknoloji şirketleri</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-box">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <h5>Araştırma Projeleri</h5>
+                                        <p>TÜBİTAK ve AB destekli projeler</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="sidebar-widget">
+                                <h4 class="widget-title">Hızlı Bilgiler</h4>
+                                <ul class="info-list">
+                                    <li><strong>Kuruluş:</strong> 1995</li>
+                                    <li><strong>Dil:</strong> Türkçe / İngilizce</li>
+                                    <li><strong>Süre:</strong> 4 Yıl (8 Dönem)</li>
+                                    <li><strong>Derece:</strong> Lisans</li>
+                                    <li><strong>ECTS:</strong> 240</li>
+                                    <li><strong>Kontenjan:</strong> 120</li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h4 class="widget-title">İletişim</h4>
+                                <ul class="contact-list">
+                                    <li>
+                                        <i class="bi bi-person-fill"></i>
+                                        <div>
+                                            <strong>Bölüm Başkanı</strong>
+                                            <p>Prof. Dr. Mehmet Yılmaz</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <div>
+                                            <strong>Telefon</strong>
+                                            <p>+90 (212) 123 45 67</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <div>
+                                            <strong>E-posta</strong>
+                                            <p>cs@modernuni.edu.tr</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h4 class="widget-title">Başvuru</h4>
+                                <a href="#" class="btn btn-primary-custom w-100 mb-2">
+                                    <i class="bi bi-file-earmark-text me-2"></i>Başvuru Formu
+                                </a>
+                                <a href="#" class="btn btn-outline-primary w-100">
+                                    <i class="bi bi-download me-2"></i>Bölüm Broşürü
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curriculum Tab -->
+                <div class="tab-pane fade" id="curriculum" role="tabpanel">
+                    <h2 class="mb-4">Müfredat</h2>
+
+                    <div class="accordion" id="curriculumAccordion">
+                        <!-- 1. Yıl -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#year1">
+                                    1. Yıl Dersleri
+                                </button>
+                            </h2>
+                            <div id="year1" class="accordion-collapse collapse show"
+                                data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Ders Kodu</th>
+                                                    <th>Ders Adı</th>
+                                                    <th>Kredi</th>
+                                                    <th>ECTS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CS101</td>
+                                                    <td>Programlamaya Giriş</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MATH101</td>
+                                                    <td>Matematik I</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PHYS101</td>
+                                                    <td>Fizik I</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ENG101</td>
+                                                    <td>İngilizce I</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TURK101</td>
+                                                    <td>Türk Dili I</td>
+                                                    <td>2</td>
+                                                    <td>2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Yıl -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#year2">
+                                    2. Yıl Dersleri
+                                </button>
+                            </h2>
+                            <div id="year2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Ders Kodu</th>
+                                                    <th>Ders Adı</th>
+                                                    <th>Kredi</th>
+                                                    <th>ECTS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CS201</td>
+                                                    <td>Veri Yapıları</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS202</td>
+                                                    <td>Nesne Yönelimli Programlama</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS203</td>
+                                                    <td>Dijital Tasarım</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MATH201</td>
+                                                    <td>Ayrık Matematik</td>
+                                                    <td>3</td>
+                                                    <td>5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Yıl -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#year3">
+                                    3. Yıl Dersleri
+                                </button>
+                            </h2>
+                            <div id="year3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Ders Kodu</th>
+                                                    <th>Ders Adı</th>
+                                                    <th>Kredi</th>
+                                                    <th>ECTS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CS301</td>
+                                                    <td>Veritabanı Sistemleri</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS302</td>
+                                                    <td>İşletim Sistemleri</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS303</td>
+                                                    <td>Bilgisayar Ağları</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS304</td>
+                                                    <td>Yazılım Mühendisliği</td>
+                                                    <td>3</td>
+                                                    <td>5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Yıl -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#year4">
+                                    4. Yıl Dersleri
+                                </button>
+                            </h2>
+                            <div id="year4" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Ders Kodu</th>
+                                                    <th>Ders Adı</th>
+                                                    <th>Kredi</th>
+                                                    <th>ECTS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CS401</td>
+                                                    <td>Yapay Zeka</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS402</td>
+                                                    <td>Makine Öğrenmesi</td>
+                                                    <td>4</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CS490</td>
+                                                    <td>Bitirme Projesi</td>
+                                                    <td>4</td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>-</td>
+                                                    <td>Seçmeli Dersler</td>
+                                                    <td>12</td>
+                                                    <td>18</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Tab -->
+                <div class="tab-pane fade" id="faculty" role="tabpanel">
+                    <h2 class="mb-4">Öğretim Üyeleri</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="profile-card">
+                                <img src="images/prof-1.jpg" alt="Prof. Dr. Mehmet Yılmaz" class="profile-card-img">
+                                <div class="card-body text-center">
+                                    <h5 class="profile-name">Prof. Dr. Mehmet Yılmaz</h5>
+                                    <p class="profile-title">Bölüm Başkanı</p>
+                                    <p class="profile-faculty">Yapay Zeka</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Profil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="profile-card">
+                                <img src="images/prof-2.jpg" alt="Prof. Dr. Can Özdemir" class="profile-card-img">
+                                <div class="card-body text-center">
+                                    <h5 class="profile-name">Prof. Dr. Can Özdemir</h5>
+                                    <p class="profile-title">Profesör</p>
+                                    <p class="profile-faculty">Veri Bilimi</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Profil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="profile-card">
+                                <img src="images/prof-3.jpg" alt="Doç. Dr. Ahmet Kaya" class="profile-card-img">
+                                <div class="card-body text-center">
+                                    <h5 class="profile-name">Doç. Dr. Ahmet Kaya</h5>
+                                    <p class="profile-title">Doçent</p>
+                                    <p class="profile-faculty">Siber Güvenlik</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Profil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="profile-card">
+                                <img src="images/prof-4.jpg" alt="Doç. Dr. Elif Arslan" class="profile-card-img">
+                                <div class="card-body text-center">
+                                    <h5 class="profile-name">Doç. Dr. Elif Arslan</h5>
+                                    <p class="profile-title">Doçent</p>
+                                    <p class="profile-faculty">Yazılım Mühendisliği</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Profil</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="faculty-members.html" class="btn btn-primary-custom">
+                            Tüm Öğretim Üyelerini Gör <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Facilities Tab -->
+                <div class="tab-pane fade" id="facilities" role="tabpanel">
+                    <h2 class="mb-4">Laboratuvarlar ve Tesisler</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="facility-card">
+                                <img src="images/hero-1.jpg" alt="Lab" class="img-fluid rounded mb-3">
+                                <h4>Yazılım Geliştirme Laboratuvarı</h4>
+                                <p>50 adet son model bilgisayar, modern IDE'ler ve geliştirme araçları</p>
+                                <ul class="facility-features">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Visual Studio, IntelliJ
+                                        IDEA</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Git, Docker, Kubernetes
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> 24/7 Erişim</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="facility-card">
+                                <img src="images/hero-2.jpg" alt="Lab" class="img-fluid rounded mb-3">
+                                <h4>Yapay Zeka Laboratuvarı</h4>
+                                <p>GPU destekli sunucular, derin öğrenme framework'leri</p>
+                                <ul class="facility-features">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> NVIDIA A100 GPU'lar</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> TensorFlow, PyTorch</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Büyük Veri İşleme</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="facility-card">
+                                <img src="images/hero-3.jpg" alt="Lab" class="img-fluid rounded mb-3">
+                                <h4>Donanım Laboratuvarı</h4>
+                                <p>FPGA, Arduino, Raspberry Pi ve elektronik devre tasarım araçları</p>
+                                <ul class="facility-features">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Xilinx FPGA Kartları</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Osiloskop, Multimetre</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> PCB Tasarım İstasyonları
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="facility-card">
+                                <img src="images/campus-1.jpg" alt="Lab" class="img-fluid rounded mb-3">
+                                <h4>Ağ ve Güvenlik Laboratuvarı</h4>
+                                <p>Cisco, Juniper ekipmanları, penetrasyon test araçları</p>
+                                <ul class="facility-features">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Cisco Router ve Switch'ler
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Kali Linux, Metasploit</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Sanal Ağ Ortamı</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Tab -->
+                <div class="tab-pane fade" id="career" role="tabpanel">
+                    <h2 class="mb-4">Kariyer Fırsatları</h2>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p class="lead">
+                                Bilgisayar Mühendisliği mezunlarımız, teknoloji sektörünün her alanında başarılı
+                                kariyerler
+                                inşa etmektedir.
+                            </p>
+
+                            <h4 class="mt-4 mb-3">Çalışma Alanları</h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="career-box">
+                                        <i class="bi bi-code-square text-primary-custom"></i>
+                                        <h5>Yazılım Geliştirme</h5>
+                                        <p>Full-stack, mobile, web development</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="career-box">
+                                        <i class="bi bi-database text-primary-custom"></i>
+                                        <h5>Veri Bilimi</h5>
+                                        <p>Data scientist, ML engineer, analyst</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="career-box">
+                                        <i class="bi bi-shield-check text-primary-custom"></i>
+                                        <h5>Siber Güvenlik</h5>
+                                        <p>Security analyst, penetration tester</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="career-box">
+                                        <i class="bi bi-cloud text-primary-custom"></i>
+                                        <h5>Cloud Computing</h5>
+                                        <p>DevOps, cloud architect, SRE</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4 mb-3">İşveren Şirketler</h4>
+                            <div class="company-logos">
+                                <div class="company-logo">Google</div>
+                                <div class="company-logo">Microsoft</div>
+                                <div class="company-logo">Amazon</div>
+                                <div class="company-logo">Meta</div>
+                                <div class="company-logo">Apple</div>
+                                <div class="company-logo">Turkcell</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="sidebar-widget">
+                                <h4 class="widget-title">İstatistikler</h4>
+                                <div class="stat-item">
+                                    <h3 class="text-primary-custom">95%</h3>
+                                    <p>Mezunlarımız 6 ay içinde iş buluyor</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3 class="text-primary-custom">₺25,000</h3>
+                                    <p>Ortalama başlangıç maaşı</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3 class="text-primary-custom">80%</h3>
+                                    <p>Mezunlarımız tercih ettikleri alanda çalışıyor</p>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget">
+                                <h4 class="widget-title">Kariyer Desteği</h4>
+                                <ul class="support-list">
+                                    <li><i class="bi bi-check-circle"></i> CV Hazırlama Workshop'ları</li>
+                                    <li><i class="bi bi-check-circle"></i> Mülakat Teknikleri Eğitimi</li>
+                                    <li><i class="bi bi-check-circle"></i> Kariyer Günleri Etkinlikleri</li>
+                                    <li><i class="bi bi-check-circle"></i> Mezun Ağı ve Mentörlük</li>
+                                    <li><i class="bi bi-check-circle"></i> Staj İmkanları</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="faculty-members.html"><i class="bi bi-chevron-right"></i> Akademik Kadro</a></li>
+                        <li><a href="news.html"><i class="bi bi-chevron-right"></i> Haberler</a></li>
+                        <li><a href="campus-life.html"><i class="bi bi-chevron-right"></i> Kampüs Yaşamı</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Akademik</h5>
+                    <ul class="footer-links">
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Lisans Programları</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Yüksek Lisans</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Doktora</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Akademik Takvim</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Kütüphane</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, 34000 İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                        <li><i class="bi bi-envelope-fill text-accent"></i> info@modernuni.edu.tr</li>
+                        <li><i class="bi bi-clock-fill text-accent"></i> Pzt-Cum: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary-custom"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px; opacity: 0; transition: opacity 0.3s;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

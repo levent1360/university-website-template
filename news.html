@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Üniversite Haberler - Kampüsten en güncel haberler ve duyurular">
+    <title>Haberler - Modern Üniversite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67
+                        </a>
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Modern Üniversite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="page-title-custom">Haberler ve Duyurular</h1>
+                    <p class="page-subtitle-custom">Kampüsümüzden en güncel haberler ve etkinlikler</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTER -->
+    <section class="py-4 bg-light-custom">
+        <div class="container">
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button class="btn btn-primary-custom category-btn active" data-category="all">Tümü</button>
+                <button class="btn btn-outline-primary category-btn" data-category="research">Araştırma</button>
+                <button class="btn btn-outline-primary category-btn" data-category="event">Etkinlik</button>
+                <button class="btn btn-outline-primary category-btn" data-category="sport">Spor</button>
+                <button class="btn btn-outline-primary category-btn" data-category="academic">Akademik</button>
+                <button class="btn btn-outline-primary category-btn" data-category="announcement">Duyuru</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- News 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="research">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/news-1.jpg" class="card-img-top news-card-img" alt="Araştırma Merkezi">
+                            <span class="card-badge">Araştırma</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">28</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Yeni Araştırma Merkezi Açıldı</h3>
+                            <p class="card-text">Üniversitemiz bünyesinde kurulan Yapay Zeka ve Veri Bilimi Araştırma
+                                Merkezi, son teknoloji ekipmanlarıyla hizmete açıldı. Merkez, öğrencilere ve
+                                araştırmacılara modern laboratuvar imkanları sunuyor.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Prof. Dr. Mehmet Yılmaz</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 287</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="sport">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/news-2.jpg" class="card-img-top news-card-img"
+                                alt="Basketbol Şampiyonluğu">
+                            <span class="card-badge">Spor</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">25</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Üniversiteler Arası Şampiyonluk</h3>
+                            <p class="card-text">Basketbol takımımız, üniversiteler arası turnuvada şampiyonluğa
+                                ulaşarak büyük bir başarıya imza attı. Final maçında rakibini 85-72 yenen takımımızı
+                                tebrik ediyoruz.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Spor Koordinatörlüğü</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 676</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="event">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/campus-1.jpg" class="card-img-top news-card-img" alt="Bahar Şenliği">
+                            <span class="card-badge">Etkinlik</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">20</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Bahar Şenliği Başlıyor</h3>
+                            <p class="card-text">Geleneksel Bahar Şenliğimiz, konserler, workshoplar ve çeşitli
+                                etkinliklerle 15-17 Mart tarihleri arasında düzenlenecek. Tüm öğrencilerimizi
+                                bekliyoruz!</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Öğrenci Konseyi</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 1621</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="academic">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/hero-2.jpg" class="card-img-top news-card-img"
+                                alt="Uluslararası İşbirliği">
+                            <span class="card-badge">Akademik</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">18</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Yeni Uluslararası İşbirlikleri</h3>
+                            <p class="card-text">Üniversitemiz, Avrupa'nın önde gelen 5 üniversitesi ile Erasmus+
+                                programı kapsamında yeni işbirliği anlaşmaları imzaladı. Öğrencilerimiz için yeni
+                                fırsatlar doğuyor.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Uluslararası İlişkiler Ofisi</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 725</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="announcement">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/campus-1.jpg" class="card-img-top news-card-img" alt="Burs Programı">
+                            <span class="card-badge">Duyuru</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">15</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Yeni Burs Programı Açıldı</h3>
+                            <p class="card-text">Başarılı öğrencilerimiz için tam burs imkanı sunan yeni burs
+                                programımız başvurulara açıldı. Başvurular 30 Aralık tarihine kadar devam edecek.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Öğrenci İşleri Daire Başkanlığı</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 786</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="research">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/hero-3.jpg" class="card-img-top news-card-img" alt="Bilimsel Yayın">
+                            <span class="card-badge">Araştırma</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">12</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Prestijli Dergide Yayın</h3>
+                            <p class="card-text">Mühendislik Fakültesi öğretim üyelerimizin çalışması, dünyaca ünlü
+                                Nature dergisinde yayınlandı. Çalışma, yenilenebilir enerji alanında önemli bir adım.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Araştırma Geliştirme Birimi</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 640</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 7 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="event">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/hero-1.jpg" class="card-img-top news-card-img" alt="Kariyer Günleri">
+                            <span class="card-badge">Etkinlik</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">10</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kariyer Günleri 2024</h3>
+                            <p class="card-text">Türkiye'nin önde gelen şirketlerinin katılımıyla Kariyer Günleri
+                                etkinliği 5-7 Aralık tarihlerinde kampüsümüzde gerçekleştirilecek. Staj ve iş fırsatları
+                                sizi bekliyor.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Kariyer Merkezi</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 1059</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 8 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="academic">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/hero-2.jpg" class="card-img-top news-card-img" alt="Yeni Program">
+                            <span class="card-badge">Akademik</span>
+                            <div class="news-date-overlay">
+                                <div class="news-day">8</div>
+                                <div class="news-month">Kasım</div>
+                                <div class="news-year">2024</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Yeni Yüksek Lisans Programı</h3>
+                            <p class="card-text">Veri Bilimi ve Yapay Zeka alanında yeni yüksek lisans programımız
+                                2024-2025 akademik yılında öğrenci kabulüne başlayacak. Başvurular yakında açılacak.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Lisansüstü Eğitim Enstitüsü</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 1103</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 9 -->
+                <div class="col-lg-4 col-md-6 mb-4 fade-in-up">
+                    <div class="news-card" data-category="sport">
+                        <div class="position-relative overflow-hidden">
+                            <img src="images/hero-3.jpg" class="card-img-top news-card-img" alt="Spor Tesisi">
+                            <span class="card-badge">Spor</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="news-date"><i class="bi bi-calendar3 me-1"></i> 5 Kasım 2024</span>
+                            <h3 class="card-title mt-3">Yeni Spor Kompleksi Açılıyor</h3>
+                            <p class="card-text">Modern ekipmanlarla donatılmış yeni spor kompleksimiz, olimpik yüzme
+                                havuzu ve fitness merkezi ile öğrencilerimizin hizmetine sunuluyor.</p>
+                            <div class="d-flex align-items-center justify-content-between text-muted small mb-3">
+                                <div><i class="bi bi-person-circle me-1"></i>
+                                <span>Sağlık Kültür ve Spor Daire Başkanlığı</span></div>
+                                <div><i class="bi bi-eye text-primary-custom me-1"></i> 1638</div>
+                            </div>
+                            <a href="news-detail.html" class="btn btn-outline-primary w-100">Devamını Oku <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Sayfa navigasyonu" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Önceki</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Sonraki</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="faculty-members.html"><i class="bi bi-chevron-right"></i> Akademik Kadro</a></li>
+                        <li><a href="news.html"><i class="bi bi-chevron-right"></i> Haberler</a></li>
+                        <li><a href="campus-life.html"><i class="bi bi-chevron-right"></i> Kampüs Yaşamı</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Akademik</h5>
+                    <ul class="footer-links">
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Lisans Programları</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Yüksek Lisans</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Doktora</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Akademik Takvim</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Kütüphane</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, 34000 İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                        <li><i class="bi bi-envelope-fill text-accent"></i> info@modernuni.edu.tr</li>
+                        <li><i class="bi bi-clock-fill text-accent"></i> Pzt-Cum: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary-custom"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px; opacity: 0; transition: opacity 0.3s;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

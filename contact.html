@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Üniversite İletişim - Bizimle iletişime geçin">
+    <title>İletişim - Modern Üniversite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67
+                        </a>
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Modern Üniversite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link active" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="page-title-custom">İletişim</h1>
+                    <p class="page-subtitle-custom">Bizimle iletişime geçin, sorularınızı yanıtlayalım</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-7 mb-4 fade-in-up">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Bize Mesaj Gönderin</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Ad Soyad <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">E-posta <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Konu <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Seçiniz...</option>
+                                        <option value="general">Genel Bilgi</option>
+                                        <option value="admission">Başvuru</option>
+                                        <option value="academic">Akademik Sorular</option>
+                                        <option value="campus">Kampüs Hizmetleri</option>
+                                        <option value="other">Diğer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mesajınız <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="privacy" required>
+                                <label class="form-check-label" for="privacy">
+                                    <small>Kişisel verilerimin işlenmesini kabul ediyorum.</small>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-lg w-100">
+                                <i class="bi bi-send me-2"></i>Gönder
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-4 fade-in-up">
+                    <div class="contact-info">
+                        <h3 class="mb-4">İletişim Bilgileri</h3>
+
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div class="contact-item-content">
+                                <h5>Adres</h5>
+                                <p>Üniversite Caddesi No:1<br>Beşiktaş, 34000 İstanbul<br>Türkiye</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div class="contact-item-content">
+                                <h5>Telefon</h5>
+                                <p>+90 (212) 123 45 67<br>+90 (212) 123 45 68</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div class="contact-item-content">
+                                <h5>E-posta</h5>
+                                <p>info@modernuni.edu.tr<br>iletisim@modernuni.edu.tr</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <div class="contact-item-content">
+                                <h5>Çalışma Saatleri</h5>
+                                <p>Pazartesi - Cuma: 08:00 - 17:00<br>Cumartesi - Pazar: Kapalı</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="mb-3">Sosyal Medya</h5>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="py-5 bg-light-custom">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kampüs Konumu</h2>
+                <p class="text-muted">Bizi ziyaret edin</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="ratio ratio-21x9 rounded shadow-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.3956352476!2d29.01!3d41.04!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzI2LjQiTiAyOcKwMDAnMzYuMCJF!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK CONTACT -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hızlı İletişim</h2>
+                <p class="text-muted">İlgili birimlerle doğrudan iletişime geçin</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+                    <div class="custom-card text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-person-badge text-primary-custom" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3 mb-2">Öğrenci İşleri</h5>
+                            <p class="card-text small text-muted mb-3">Kayıt, belgeler ve işlemler</p>
+                            <a href="tel:+902121234567" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-telephone me-1"></i>Ara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+                    <div class="custom-card text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-globe text-primary-custom" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3 mb-2">Uluslararası İlişkiler</h5>
+                            <p class="card-text small text-muted mb-3">Erasmus ve değişim programları</p>
+                            <a href="mailto:international@modernuni.edu.tr" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-envelope me-1"></i>E-posta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+                    <div class="custom-card text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-briefcase text-primary-custom" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3 mb-2">Kariyer Merkezi</h5>
+                            <p class="card-text small text-muted mb-3">Staj ve iş imkanları</p>
+                            <a href="mailto:kariyer@modernuni.edu.tr" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-envelope me-1"></i>E-posta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 fade-in-up">
+                    <div class="custom-card text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-book text-primary-custom" style="font-size: 3rem;"></i>
+                            <h5 class="mt-3 mb-2">Kütüphane</h5>
+                            <p class="card-text small text-muted mb-3">Kitap ve kaynak hizmetleri</p>
+                            <a href="mailto:kutuphane@modernuni.edu.tr" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-envelope me-1"></i>E-posta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="faculty-members.html"><i class="bi bi-chevron-right"></i> Akademik Kadro</a></li>
+                        <li><a href="news.html"><i class="bi bi-chevron-right"></i> Haberler</a></li>
+                        <li><a href="campus-life.html"><i class="bi bi-chevron-right"></i> Kampüs Yaşamı</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Akademik</h5>
+                    <ul class="footer-links">
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Lisans Programları</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Yüksek Lisans</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Doktora</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Akademik Takvim</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Kütüphane</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, 34000 İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                        <li><i class="bi bi-envelope-fill text-accent"></i> info@modernuni.edu.tr</li>
+                        <li><i class="bi bi-clock-fill text-accent"></i> Pzt-Cum: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary-custom"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px; opacity: 0; transition: opacity 0.3s;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

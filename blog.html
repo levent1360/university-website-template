@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Modern Üniversite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="blog-detail.html" class="top-bar-link"><i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67</a>
+                        <a href="blog-detail.html" class="top-bar-link"><i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="blog-detail.html" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="blog-detail.html" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="blog-detail.html" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="blog-detail.html" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="blog-detail.html" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="blog-detail.html" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="blog-detail.html" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-mortarboard-fill"></i> Modern Üniversite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="blog-detail.html" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="blog-detail.html" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link active" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header-custom">
+        <div class="container">
+            <h1 class="page-title-custom">Blog</h1>
+            <p class="page-subtitle-custom">Akademik dünyadan yazılar</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card">
+                        <img src="images/hero-1.jpg" alt="Blog" class="blog-image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-calendar3"></i> 15 Kasım 2024</span>
+                                <span><i class="bi bi-person"></i> Prof. Dr. Mehmet Yılmaz</span>
+                                <span><i class="bi bi-tag"></i> Yapay Zeka</span>
+                            
+                                <span><i class="bi bi-eye"></i> 779 Okunma</span></div>
+                            <h2><a href="blog-detail.html">Yapay Zeka ve Geleceğin Eğitimi</a></h2>
+                            <p>Yapay zeka teknolojilerinin eğitim sistemlerine entegrasyonu, öğrenme deneyimlerini
+                                kökten değiştiriyor. Kişiselleştirilmiş öğrenme yolları, akıllı değerlendirme sistemleri
+                                ve sanal asistanlar...</p>
+                            <a href="blog-detail.html" class="btn btn-outline-primary">Devamını Oku <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card">
+                        <img src="images/hero-2.jpg" alt="Blog" class="blog-image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-calendar3"></i> 10 Kasım 2024</span>
+                                <span><i class="bi bi-person"></i> Doç. Dr. Elif Arslan</span>
+                                <span><i class="bi bi-tag"></i> Araştırma</span>
+                            
+                                <span><i class="bi bi-eye"></i> 1630 Okunma</span></div>
+                            <h2><a href="blog-detail.html">Üniversite-Sanayi İşbirliğinin Önemi</a></h2>
+                            <p>Akademik araştırmaların endüstriyel uygulamalara dönüşmesi, hem üniversiteler hem de
+                                şirketler için kritik önem taşıyor. İşbirliği projeleri, öğrencilere gerçek dünya
+                                deneyimi kazandırırken...</p>
+                            <a href="blog-detail.html" class="btn btn-outline-primary">Devamını Oku <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card">
+                        <img src="images/hero-3.jpg" alt="Blog" class="blog-image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-calendar3"></i> 5 Kasım 2024</span>
+                                <span><i class="bi bi-person"></i> Dr. Can Özdemir</span>
+                                <span><i class="bi bi-tag"></i> Teknoloji</span>
+                            
+                                <span><i class="bi bi-eye"></i> 1640 Okunma</span></div>
+                            <h2><a href="blog-detail.html">Siber Güvenlik: Dijital Çağın Zorunluluğu</a></h2>
+                            <p>Dijitalleşmenin hızla arttığı günümüzde, siber güvenlik artık opsiyonel değil, zorunlu
+                                bir ihtiyaç haline geldi. Kurumlar ve bireyler için veri güvenliği stratejileri...</p>
+                            <a href="blog-detail.html" class="btn btn-outline-primary">Devamını Oku <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Pagination -->
+                    <nav class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="blog-detail.html">Önceki</a></li>
+                            <li class="page-item active"><a class="page-link" href="blog-detail.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="blog-detail.html">2</a></li>
+                            <li class="page-item"><a class="page-link" href="blog-detail.html">3</a></li>
+                            <li class="page-item"><a class="page-link" href="blog-detail.html">Sonraki</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Kategoriler</h4>
+                        <ul class="category-list">
+                            <li><a href="blog-detail.html"><i class="bi bi-folder"></i> Yapay Zeka <span>(12)</span></a></li>
+                            <li><a href="blog-detail.html"><i class="bi bi-folder"></i> Araştırma <span>(8)</span></a></li>
+                            <li><a href="blog-detail.html"><i class="bi bi-folder"></i> Teknoloji <span>(15)</span></a></li>
+                            <li><a href="blog-detail.html"><i class="bi bi-folder"></i> Eğitim <span>(10)</span></a></li>
+                            <li><a href="blog-detail.html"><i class="bi bi-folder"></i> Kariyer <span>(6)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Son Yazılar</h4>
+                        <div class="recent-posts">
+                            <div class="recent-post-item">
+                                <img src="images/campus-1.jpg" alt="Post">
+                                <div>
+                                    <a href="blog-detail.html">Yapay Zeka ve Geleceğin Eğitimi</a>
+                                    <small>15 Kasım 2024</small>
+                                </div>
+                            </div>
+                            <div class="recent-post-item">
+                                <img src="images/hero-1.jpg" alt="Post">
+                                <div>
+                                    <a href="blog-detail.html">Üniversite-Sanayi İşbirliği</a>
+                                    <small>10 Kasım 2024</small>
+                                </div>
+                            </div>
+                            <div class="recent-post-item">
+                                <img src="images/hero-2.jpg" alt="Post">
+                                <div>
+                                    <a href="blog-detail.html">Siber Güvenlik</a>
+                                    <small>5 Kasım 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Etiketler</h4>
+                        <div class="tag-cloud">
+                            <a href="blog-detail.html" class="tag">Yapay Zeka</a>
+                            <a href="blog-detail.html" class="tag">Araştırma</a>
+                            <a href="blog-detail.html" class="tag">Teknoloji</a>
+                            <a href="blog-detail.html" class="tag">Eğitim</a>
+                            <a href="blog-detail.html" class="tag">Kariyer</a>
+                            <a href="blog-detail.html" class="tag">İnovasyon</a>
+                            <a href="blog-detail.html" class="tag">Bilim</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında geleceği inşa ediyoruz.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right"></i> Hakkımızda</a></li>
+                        <li><a href="blog.html"><i class="bi bi-chevron-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

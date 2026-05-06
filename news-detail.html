@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yeni Araştırma Merkezi Açıldı - Modern Üniversite">
+    <title>Yeni Araştırma Merkezi Açıldı - Modern Üniversite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="news-detail-page">
+
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67
+                        </a>
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Modern Üniversite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NEWS DETAIL SECTION -->
+    <section class="py-5" style="margin-top: 120px;">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item"><a href="news.html">Haberler</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Yeni Araştırma Merkezi Açıldı</li>
+                        </ol>
+                    </nav>
+
+                    <!-- Article -->
+                    <article class="news-detail-article">
+                        <!-- Category Badge -->
+                        <span class="badge bg-primary-custom mb-3">Araştırma</span>
+
+                        <!-- Title -->
+                        <h1 class="news-detail-title">Yeni Araştırma Merkezi Açıldı</h1>
+
+                        <!-- Meta Info -->
+                        <div class="news-detail-meta mb-4">
+                            <span class="me-3">
+                                <i class="bi bi-calendar3 text-primary-custom"></i>
+                                28 Kasım 2024
+                            </span>
+                            <span class="me-3">
+                                <i class="bi bi-person-circle text-primary-custom"></i>
+                                Prof. Dr. Mehmet Yılmaz
+                            </span>
+                            <span>
+                                <i class="bi bi-eye text-primary-custom"></i>
+                                1,245 Görüntülenme
+                            </span>
+                        </div>
+
+                        <!-- Featured Image -->
+                        <div class="news-detail-image mb-4">
+                            <img src="images/news-1.jpg" alt="Araştırma Merkezi" class="img-fluid rounded shadow">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="news-detail-content">
+                            <p class="lead">
+                                Üniversitemiz bünyesinde kurulan Yapay Zeka ve Veri Bilimi Araştırma Merkezi,
+                                son teknoloji ekipmanlarıyla hizmete açıldı. Merkez, öğrencilere ve araştırmacılara
+                                modern laboratuvar imkanları sunuyor.
+                            </p>
+
+                            <p>
+                                Modern Üniversitesi Rektörü Prof. Dr. Ahmet Yılmaz'ın katılımıyla gerçekleştirilen
+                                açılış töreninde, merkezin ülkemizin teknoloji ve inovasyon alanındaki gelişimine
+                                önemli katkılar sağlayacağı vurgulandı.
+                            </p>
+
+                            <h3 class="mt-4 mb-3">Merkezin Özellikleri</h3>
+                            <p>
+                                Yapay Zeka ve Veri Bilimi Araştırma Merkezi, 500 metrekarelik alanda kuruldu ve
+                                aşağıdaki özelliklerle dikkat çekiyor:
+                            </p>
+
+                            <ul class="custom-list">
+                                <li>Yüksek performanslı GPU sunucuları</li>
+                                <li>Büyük veri analizi için özel yazılımlar</li>
+                                <li>Makine öğrenimi ve derin öğrenme laboratuvarları</li>
+                                <li>24 saat erişilebilir çalışma alanları</li>
+                                <li>Uluslararası standartlarda araştırma ekipmanları</li>
+                            </ul>
+
+                            <blockquote class="blockquote-custom my-4">
+                                <p>
+                                    "Bu merkez, öğrencilerimizin ve araştırmacılarımızın yapay zeka ve veri bilimi
+                                    alanında dünya standartlarında çalışmalar yapabilmesi için gerekli tüm imkanları
+                                    sağlayacak."
+                                </p>
+                                <footer class="blockquote-footer">Prof. Dr. Mehmet Yılmaz, Merkez Koordinatörü</footer>
+                            </blockquote>
+
+                            <h3 class="mt-4 mb-3">Araştırma Alanları</h3>
+                            <p>
+                                Merkez, öncelikli olarak şu alanlarda araştırmalar yürütecek:
+                            </p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <h5><i class="bi bi-cpu text-primary-custom me-2"></i>Yapay Zeka</h5>
+                                        <p>Makine öğrenimi, derin öğrenme ve doğal dil işleme</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <h5><i class="bi bi-graph-up text-primary-custom me-2"></i>Veri Bilimi</h5>
+                                        <p>Büyük veri analizi ve veri madenciliği</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <h5><i class="bi bi-robot text-primary-custom me-2"></i>Robotik</h5>
+                                        <p>Otonom sistemler ve akıllı robotlar</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-box">
+                                        <h5><i class="bi bi-shield-check text-primary-custom me-2"></i>Siber Güvenlik
+                                        </h5>
+                                        <p>Veri güvenliği ve kriptografi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                Merkez, sadece üniversite öğrencilerine değil, aynı zamanda sanayi kuruluşlarına
+                                ve diğer araştırma kurumlarına da hizmet verecek. Bu sayede akademi-sanayi işbirliği
+                                güçlendirilecek ve ülkemizin teknoloji üretim kapasitesi artırılacak.
+                            </p>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="news-detail-tags mt-5">
+                            <h5 class="mb-3">Etiketler</h5>
+                            <a href="#" class="badge bg-light text-dark me-2 mb-2">Araştırma</a>
+                            <a href="#" class="badge bg-light text-dark me-2 mb-2">Yapay Zeka</a>
+                            <a href="#" class="badge bg-light text-dark me-2 mb-2">Veri Bilimi</a>
+                            <a href="#" class="badge bg-light text-dark me-2 mb-2">Teknoloji</a>
+                            <a href="#" class="badge bg-light text-dark me-2 mb-2">İnovasyon</a>
+                        </div>
+
+                        <!-- Share -->
+                        <div class="news-detail-share mt-4 pt-4 border-top">
+                            <h5 class="mb-3">Paylaş</h5>
+                            <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                            <a href="#" class="btn btn-outline-info me-2"><i class="bi bi-twitter"></i> Twitter</a>
+                            <a href="#" class="btn btn-outline-success me-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                            <a href="#" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Related News -->
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">İlgili Haberler</h4>
+
+                        <div class="related-news-item">
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <img src="images/news-2.jpg" alt="Haber" class="img-fluid rounded">
+                                </div>
+                                <div class="col-8">
+                                    <a href="#" class="related-news-title">Üniversiteler Arası Şampiyonluk</a>
+                                    <p class="related-news-date"><i class="bi bi-calendar3"></i> 25 Kasım 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="related-news-item">
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <img src="images/campus-1.jpg" alt="Haber" class="img-fluid rounded">
+                                </div>
+                                <div class="col-8">
+                                    <a href="#" class="related-news-title">Bahar Şenliği Başlıyor</a>
+                                    <p class="related-news-date"><i class="bi bi-calendar3"></i> 20 Kasım 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="related-news-item">
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <img src="images/hero-2.jpg" alt="Haber" class="img-fluid rounded">
+                                </div>
+                                <div class="col-8">
+                                    <a href="#" class="related-news-title">Yeni Uluslararası İşbirlikleri</a>
+                                    <p class="related-news-date"><i class="bi bi-calendar3"></i> 18 Kasım 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Kategoriler</h4>
+                        <ul class="category-list">
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Araştırma <span>(12)</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Etkinlik <span>(8)</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Spor <span>(5)</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Akademik <span>(15)</span></a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i> Duyuru <span>(10)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Hızlı Erişim</h4>
+                        <div class="d-grid gap-2">
+                            <a href="news.html" class="btn btn-outline-primary">Tüm Haberler</a>
+                            <a href="contact.html" class="btn btn-outline-primary">İletişim</a>
+                            <a href="faculties.html" class="btn btn-outline-primary">Fakülteler</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="faculty-members.html"><i class="bi bi-chevron-right"></i> Akademik Kadro</a></li>
+                        <li><a href="news.html"><i class="bi bi-chevron-right"></i> Haberler</a></li>
+                        <li><a href="campus-life.html"><i class="bi bi-chevron-right"></i> Kampüs Yaşamı</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Akademik</h5>
+                    <ul class="footer-links">
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Lisans Programları</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Yüksek Lisans</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Doktora</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Akademik Takvim</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Kütüphane</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, 34000 İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                        <li><i class="bi bi-envelope-fill text-accent"></i> info@modernuni.edu.tr</li>
+                        <li><i class="bi bi-clock-fill text-accent"></i> Pzt-Cum: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary-custom"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px; opacity: 0; transition: opacity 0.3s;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

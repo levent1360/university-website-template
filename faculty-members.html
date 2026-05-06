@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Üniversite Akademik Kadro - Deneyimli öğretim üyeleri">
+    <title>Akademik Kadro - Modern Üniversite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-telephone-fill"></i> +90 (212) 123 45 67
+                        </a>
+                        <a href="#" class="top-bar-link">
+                            <i class="bi bi-envelope-fill"></i> info@modernuni.edu.tr
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top-bar-right">
+                        <div class="top-bar-buttons">
+                            <button class="top-bar-btn" onclick="alert('Arama fonksiyonu yakında eklenecek')">
+                                <i class="bi bi-search"></i> Ara
+                            </button>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-person-fill"></i> Öğrenci
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-mortarboard-fill"></i> Mezun
+                            </a>
+                            <a href="#" class="top-bar-btn">
+                                <i class="bi bi-briefcase-fill"></i> Personel
+                            </a>
+                        </div>
+                        <div class="top-bar-social">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Modern Üniversite
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item rektor-menu-wrapper">
+                  <a class="nav-link" href="#" id="rektorMenuLink">Rektör</a>
+                  <div class="rektor-mega-dropdown" id="rektorMegaDropdown">
+                    <div class="rektor-mega-inner">
+                      <div class="rektor-photo">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Ahmet Yılmaz">
+                      </div>
+                      <div class="rektor-info">
+                        <h4>Prof. Dr. Ahmet Yılmaz</h4>
+                        <p>Modern Üniversite Rektörü olarak, bilimsel mükemmellik ve yenilikçi eğitim anlayışıyla
+                          öğrencilerimizi geleceğe hazırlıyoruz. 25 yılı aşkın akademik deneyimimle, üniversitemizi
+                          uluslararası arenada temsil etmekten gurur duyuyorum.</p>
+                        <a href="#" class="rektor-detail-link">Detaylı Bilgi <i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculties.html">Fakülteler</a></li>
+                <li class="nav-item"><a class="nav-link" href="academic-calendar.html">Akademik Takvim</a></li>
+                <li class="nav-item"><a class="nav-link" href="course-catalog.html">Ders Kataloğu</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Haberler</a></li>
+                <li class="nav-item dropdown-wrapper" style="position: relative;">
+                  <button class="navbar-dropdown-toggle" id="navbarDropdown" onclick="toggleNavDropdown()">
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <div class="navbar-dropdown-menu" id="navbarDropdownMenu">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="gallery.html">Galeri</a>
+                    <a class="nav-link" href="faq.html">SSS</a>
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="page-title-custom">Akademik Kadromuz</h1>
+                    <p class="page-subtitle-custom">Alanında uzman, deneyimli öğretim üyelerimiz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER SECTION -->
+    <section class="py-4 bg-light-custom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <label for="facultyFilter" class="form-label fw-bold">Fakülteye Göre Filtrele:</label>
+                </div>
+                <div class="col-md-9">
+                    <select class="form-select" id="facultyFilter">
+                        <option value="all">Tüm Fakülteler</option>
+                        <option value="engineering">Mühendislik Fakültesi</option>
+                        <option value="medicine">Tıp Fakültesi</option>
+                        <option value="economics">İktisadi ve İdari Bilimler</option>
+                        <option value="law">Hukuk Fakültesi</option>
+                        <option value="science">Fen-Edebiyat Fakültesi</option>
+                        <option value="communication">İletişim Fakültesi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACULTY MEMBERS SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="facultyMembersGrid">
+
+                <!-- Prof. Dr. Mehmet Yılmaz -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="engineering">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Mehmet Yılmaz" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Prof. Dr. Mehmet Yılmaz</h5>
+                            <p class="profile-title">Profesör</p>
+                            <p class="profile-faculty">Mühendislik Fakültesi</p>
+                            <p class="profile-department">Bilgisayar Mühendisliği</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prof. Dr. Ayşe Demir -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="medicine">
+                        <img src="images/prof-2.jpg" alt="Prof. Dr. Ayşe Demir" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Prof. Dr. Ayşe Demir</h5>
+                            <p class="profile-title">Profesör</p>
+                            <p class="profile-faculty">Tıp Fakültesi</p>
+                            <p class="profile-department">Dahili Tıp Bilimleri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doç. Dr. Ahmet Kaya -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="economics">
+                        <img src="images/prof-3.jpg" alt="Doç. Dr. Ahmet Kaya" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Doç. Dr. Ahmet Kaya</h5>
+                            <p class="profile-title">Doçent</p>
+                            <p class="profile-faculty">İktisadi ve İdari Bilimler</p>
+                            <p class="profile-department">İşletme</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Öğr. Üyesi Zeynep Şahin -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="law">
+                        <img src="images/prof-4.jpg" alt="Dr. Öğr. Üyesi Zeynep Şahin" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Dr. Öğr. Üyesi Zeynep Şahin</h5>
+                            <p class="profile-title">Doktor Öğretim Üyesi</p>
+                            <p class="profile-faculty">Hukuk Fakültesi</p>
+                            <p class="profile-department">Kamu Hukuku</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prof. Dr. Can Özdemir -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="engineering">
+                        <img src="images/prof-5.jpg" alt="Prof. Dr. Can Özdemir" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Prof. Dr. Can Özdemir</h5>
+                            <p class="profile-title">Profesör</p>
+                            <p class="profile-faculty">Mühendislik Fakültesi</p>
+                            <p class="profile-department">Elektrik-Elektronik Müh.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doç. Dr. Elif Arslan -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="science">
+                        <img src="images/prof-6.jpg" alt="Doç. Dr. Elif Arslan" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Doç. Dr. Elif Arslan</h5>
+                            <p class="profile-title">Doçent</p>
+                            <p class="profile-faculty">Fen-Edebiyat Fakültesi</p>
+                            <p class="profile-department">Matematik</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prof. Dr. Murat Çelik -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="medicine">
+                        <img src="images/prof-1.jpg" alt="Prof. Dr. Murat Çelik" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Prof. Dr. Murat Çelik</h5>
+                            <p class="profile-title">Profesör</p>
+                            <p class="profile-faculty">Tıp Fakültesi</p>
+                            <p class="profile-department">Cerrahi Tıp Bilimleri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Öğr. Üyesi Selin Yıldız -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="communication">
+                        <img src="images/prof-2.jpg" alt="Dr. Öğr. Üyesi Selin Yıldız" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Dr. Öğr. Üyesi Selin Yıldız</h5>
+                            <p class="profile-title">Doktor Öğretim Üyesi</p>
+                            <p class="profile-faculty">İletişim Fakültesi</p>
+                            <p class="profile-department">Gazetecilik</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prof. Dr. Kemal Aydın -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="engineering">
+                        <img src="images/prof-3.jpg" alt="Prof. Dr. Kemal Aydın" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Prof. Dr. Kemal Aydın</h5>
+                            <p class="profile-title">Profesör</p>
+                            <p class="profile-faculty">Mühendislik Fakültesi</p>
+                            <p class="profile-department">Makine Mühendisliği</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doç. Dr. Deniz Koç -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="economics">
+                        <img src="images/prof-4.jpg" alt="Doç. Dr. Deniz Koç" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Doç. Dr. Deniz Koç</h5>
+                            <p class="profile-title">Doçent</p>
+                            <p class="profile-faculty">İktisadi ve İdari Bilimler</p>
+                            <p class="profile-department">İktisat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prof. Dr. Fatma Yılmaz -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="science">
+                        <img src="images/prof-5.jpg" alt="Prof. Dr. Fatma Yılmaz" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Prof. Dr. Fatma Yılmaz</h5>
+                            <p class="profile-title">Profesör</p>
+                            <p class="profile-faculty">Fen-Edebiyat Fakültesi</p>
+                            <p class="profile-department">Kimya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr. Öğr. Üyesi Burak Tekin -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4 fade-in-up">
+                    <div class="profile-card" data-faculty="law">
+                        <img src="images/prof-6.jpg" alt="Dr. Öğr. Üyesi Burak Tekin" class="profile-card-img">
+                        <div class="card-body">
+                            <h5 class="profile-name">Dr. Öğr. Üyesi Burak Tekin</h5>
+                            <p class="profile-title">Doktor Öğretim Üyesi</p>
+                            <p class="profile-faculty">Hukuk Fakültesi</p>
+                            <p class="profile-department">Özel Hukuk</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="bi bi-mortarboard-fill me-2"></i>Modern Üniversite</h5>
+                    <p>Bilim ve teknolojinin ışığında, topluma hizmet eden, yenilikçi düşünen bireyler yetiştiriyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Fakülteler</a></li>
+                        <li><a href="faculty-members.html"><i class="bi bi-chevron-right"></i> Akademik Kadro</a></li>
+                        <li><a href="news.html"><i class="bi bi-chevron-right"></i> Haberler</a></li>
+                        <li><a href="campus-life.html"><i class="bi bi-chevron-right"></i> Kampüs Yaşamı</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Akademik</h5>
+                    <ul class="footer-links">
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Lisans Programları</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Yüksek Lisans</a></li>
+                        <li><a href="faculties.html"><i class="bi bi-chevron-right"></i> Doktora</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Akademik Takvim</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i> Kütüphane</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>İletişim</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt-fill text-accent"></i> Üniversite Caddesi No:1, 34000 İstanbul</li>
+                        <li><i class="bi bi-telephone-fill text-accent"></i> +90 (212) 123 45 67</li>
+                        <li><i class="bi bi-envelope-fill text-accent"></i> info@modernuni.edu.tr</li>
+                        <li><i class="bi bi-clock-fill text-accent"></i> Pzt-Cum: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Modern Üniversite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary-custom"
+        style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 999; border-radius: 50%; width: 50px; height: 50px; opacity: 0; transition: opacity 0.3s;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
