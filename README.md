@@ -188,5 +188,5 @@ Chrome ✅ | Firefox ✅ | Safari ✅ | Edge ✅ *(son 2 sürüm)*
 
 ---
 
-**Geliştirme:** Aralık 2024 – Mayıs 2026  
+**Geliştirme:** Aralık 2025 – Mayıs 2026  
 **Versiyon:** 2.1.0
